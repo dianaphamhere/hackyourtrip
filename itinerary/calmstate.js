@@ -46,7 +46,7 @@ db.collection('calmstate').onSnapshot(snapshot => {
 	let changes = snapshot.docChanges();
 	changes.forEach(change => {
 		if(change.type == 'added'){
-			renderCafe(change.doc);
+			// renderCafe(change.doc);
 		} else if (change.type == 'modified'){
 			console.log('modified');
 			calmState(change.doc);
