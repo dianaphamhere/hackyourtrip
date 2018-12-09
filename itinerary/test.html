@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>firebase tutorial</title>
+	<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+
+	 <h1>Calm Down</h1>
+			 <button id="yesCalm">calm</button>
+	 <button id="noCalm">not calm</button>
+	 <div id="clearthis"></div>
+        <div class="content">
+
+            <form id="add-cafe-form">
+            	<input type="text" name="name" placeholder="Cafe Name">
+            	<input type="text" name="city" placeholder="Cafe City">
+            	<button>Add Cafe</button>
+
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+
+		<script>
+		  // Initialize Firebase
+		  var config = {
+		    apiKey: "AIzaSyD3A3a26kSC_pUJzaCEx_vYquCceYD7qsU",
+		    authDomain: "firestore-tutorial-48b9d.firebaseapp.com",
+		    databaseURL: "https://firestore-tutorial-48b9d.firebaseio.com",
+		    projectId: "firestore-tutorial-48b9d",
+		    storageBucket: "firestore-tutorial-48b9d.appspot.com",
+		    messagingSenderId: "267077807908"
+		  };
+		  firebase.initializeApp(config);
+		  const db = firebase.firestore();
+		  db.settings({ timestampsInSnapshots: true });
+		</script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="calmstate.js"></script>
+</body>
+</html>
