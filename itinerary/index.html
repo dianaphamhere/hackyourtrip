@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>firebase tutorial</title>
+	<title>itinerary</title>
 	<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -10,15 +10,20 @@
 	<div id="wrapper">
 		<div id="nav">
 				<ul id="nav_ul">
-					<li id="nav_li"><a href="index.html">home</a></li>
+					<li id="nav_li"><a href="../index.html">home</a></li>
 					<li id="nav_li"><a href="#">my trips</a></li>
-					<li id="nav_li"><a href="itinerary/index.html">itinerary</a></li>
-					<li id="nav_li"><a href="steadymyself.html">calm</a></li>
+					<li id="nav_li"><a href="#">itinerary</a></li>
+					<li id="nav_li"><a id="calmdown" href="../steadymyself.html">calm</a></li>
 					<li id="nav_li"><a href="#">settings</a></li>
 				</ul>
 		</div>
 		<div id="container">
-
+			<div id="alertCont">
+				<div>
+					<p>Alert: {user} needs to calm down</p>
+					<img id="map" src="../images/londonmap.png"/>
+				</div>
+			</div>
 	 <div id="header">
 				<h1 class="page_title">Itinerary</h1>
 			</div>

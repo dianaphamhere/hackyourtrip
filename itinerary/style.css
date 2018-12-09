@@ -20,6 +20,26 @@ body{
     /*background-color: yellow;*/
 }
 
+#alertCont {
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 375px;
+    height: 500px;
+    background-color: #ffe6e6;
+    z-index: 10;
+    border: 2px solid red;
+}
+
+#map {
+	position: relative;
+    width: 60%;
+    height: 60%;
+}
+
 #nav {
     /*display: none;*/
     position: fixed;
