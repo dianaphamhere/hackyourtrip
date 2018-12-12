@@ -21,6 +21,42 @@
 	/*background-color: yellow;*/
 }
 
+#signinCont {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 300px;
+	height: 550px;
+	/*background-color: red;*/
+}
+
+#signinCont h1 {
+	margin-bottom: 150px;
+}
+
+#signinBtn {
+	width: 60px;
+	height: 30px;
+}
+
+#signinBtn a {
+	text-decoration: none;
+	color: black;
+}
+
+#signinCont input {
+	/*border-bottom: 2px solid black;*/
+	width: 200px;
+	height: 30px;
+	margin-bottom: 30px;
+	box-shadow: none;
+}
+
+#username{
+}
+
 #nav {
 	/*display: none;*/
 	position: fixed;
@@ -129,6 +165,7 @@
 	height: 120px;
 	margin-right: 10px;
 	background-color: #0099ff;
+	cursor: pointer;
 }
 
 #listName {
